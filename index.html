@@ -1,9 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 	<head>
-		<meta name="google-site-verification" content="HMhNd2vnuiZPZd0W8sxNS8J0iaWX4PSx0BEGJ6VmYgE" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Mixtape Anthology</title>
+		<meta name="description" content="Mixtape Anthology is the best place to read about the best things life has to offer.">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/bootstrap-responsive.css" rel="stylesheet" media="screen">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800' rel='stylesheet' type='text/css'> 
+		<link href="css/main.css" rel="stylesheet" media="all">
 	</head>
 	<body>
-		<h1>Mixtape Anthology</h1>
+		<div class="jumbotron masthead">
+			<div class="container">
+				<h1>Mixtape Anthology</h1>
+				<p>The web's most newest online magazine.</p>
+				
+				<div class="row-fluid">
+					<div class="span8 offset2 Wrapcountdown">
+						<p>Game on in:</p>
+						<ul id="countdown">
+							<li><span class="days">00</span><p class="timeRefDays">days</p></li>
+							<li><span class="hours">00</span><p class="timeRefHours">hours</p></li>
+							<li><span class="minutes">00</span><p class="timeRefMinutes">minutes</p></li>
+							<li><span class="seconds">00</span><p class="timeRefSeconds">seconds</p></li>
+						</ul>
+					</div>
+				</div>
+ 
+			</div>
+		</div>
+
+		<div class="container"> 
+			<div class="row-fluid">
+				<div class="span8 offset2 footer">
+					<p class="socialicons">
+						<a href="http://facebook.com/mixtapeanthology" target="_blank" class="icons facebook"></a>
+						<a href="http://twitter.com/mxtapeanthology" target="_blank" class="icons twitter"></a>
+					</p>
+					<p class="footertext">Copyright &copy; 2013 Mixtape Anthology. Made with love.</p>
+				</div>
+			</div>
+		</div>
+ 
+		<script src="js/jquery-1.9.0.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/countdown.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("#countdown").countdown({
+					date: "1 October 2013 09:00:00",/*Change your time here*/
+					format: "on"
+				},
+			
+				function() {
+					// callback function
+				});
+			});
+		</script>
+		<script type="text/javascript">
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-33214833-1']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		</script>
 	</body>
 </html>
